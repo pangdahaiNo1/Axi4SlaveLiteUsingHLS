@@ -1,0 +1,35 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test.cpp in debug mode
+   Compiling ../../../../axi_slave_lite_reg.cpp in debug mode
+../../../../axi_slave_lite_reg.cpp: In function ‘void axi_slave_lite_reg(AxiArPkt&, AxiAwPkt&, AxiBPkt&, AxiRPkt&, AxiWPkt&)’:
+../../../../axi_slave_lite_reg.cpp:124:20: error: ‘struct AxiWPkt’ has no member named ‘data’; did you mean ‘wdata’?
+    wdata = s_axi_w.data & s_axi_w.wstrb;
+                    ^~~~
+../../../../axi_slave_lite_reg.cpp:127:6: error: ‘inner_reg_0’ was not declared in this scope
+      inner_reg_0 = wdata;
+      ^~~~~~~~~~~
+../../../../axi_slave_lite_reg.cpp:130:6: error: ‘inner_reg_1’ was not declared in this scope
+      inner_reg_1 = wdata;
+      ^~~~~~~~~~~
+../../../../axi_slave_lite_reg.cpp:133:6: error: ‘inner_reg_2’ was not declared in this scope
+      inner_reg_2 = wdata;
+      ^~~~~~~~~~~
+../../../../axi_slave_lite_reg.cpp:135:6: error: ‘inner_reg_3’ was not declared in this scope
+      inner_reg_3 = wdata;
+      ^~~~~~~~~~~
+../../../../axi_slave_lite_reg.cpp:169:14: error: ‘inner_reg_0’ was not declared in this scope
+      rdata = inner_reg_0;
+              ^~~~~~~~~~~
+../../../../axi_slave_lite_reg.cpp:172:14: error: ‘inner_reg_1’ was not declared in this scope
+      rdata = inner_reg_1;
+              ^~~~~~~~~~~
+../../../../axi_slave_lite_reg.cpp:175:14: error: ‘inner_reg_2’ was not declared in this scope
+      rdata = inner_reg_2;
+              ^~~~~~~~~~~
+../../../../axi_slave_lite_reg.cpp:178:14: error: ‘inner_reg_3’ was not declared in this scope
+      rdata = inner_reg_3;
+              ^~~~~~~~~~~
+make: *** [csim.mk:79: obj/axi_slave_lite_reg.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

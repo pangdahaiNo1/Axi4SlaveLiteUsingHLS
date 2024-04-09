@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'axi_slave_lite_reg'
+================================================================
+* Date:           Tue Apr  9 14:26:50 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        axi_slave_lite_demo
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu19eg-ffvc1760-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.015 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|     212|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|     168|    -|
+|Register         |        -|     -|       63|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|       63|     380|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1968|  1968|  1045440|  522720|  128|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |and_ln534_fu_500_p2     |       and|   0|  0|   2|           1|           1|
+    |ap_condition_141        |       and|   0|  0|   2|           1|           1|
+    |ret_fu_305_p2           |       and|   0|  0|   8|           8|           8|
+    |icmp_ln870_fu_486_p2    |      icmp|   0|  0|   8|           2|           2|
+    |s_axi_r_rdata           |    select|   0|  0|  64|           1|          64|
+    |select_ln124_fu_492_p3  |    select|   0|  0|  64|           1|          64|
+    |select_ln534_fu_506_p3  |    select|   0|  0|  64|           1|          64|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 212|          15|         204|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------+----+-----------+-----+-----------+
+    |                Name                | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_p_Val2_1_phi_fu_227_p14  |  14|          3|    5|         15|
+    |ap_phi_mux_wready_V_phi_fu_246_p14  |  14|          3|    1|          3|
+    |ap_sig_allocacmp_inner_reg0_V_load  |   9|          2|    9|         18|
+    |ap_sig_allocacmp_inner_reg1_V_load  |   9|          2|    9|         18|
+    |ap_sig_allocacmp_inner_reg2_V_load  |   9|          2|    9|         18|
+    |ap_sig_allocacmp_inner_reg3_V_load  |   9|          2|   10|         20|
+    |rdata_V                             |  20|          4|   12|         48|
+    |s_axi_ar_arready                    |  14|          3|    1|          3|
+    |s_axi_aw_awready                    |  14|          3|    1|          3|
+    |s_axi_b_bvalid                      |  14|          3|    1|          3|
+    |s_axi_r_rvalid                      |  14|          3|    1|          3|
+    |s_axi_w_wready                      |  14|          3|    1|          3|
+    |state1_V                            |  14|          3|    2|          6|
+    +------------------------------------+----+-----------+-----+-----------+
+    |Total                               | 168|         36|   62|        161|
+    +------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------+----+----+-----+-----------+
+    |     Name     | FF | LUT| Bits| Const Bits|
+    +--------------+----+----+-----+-----------+
+    |ap_CS_fsm     |   1|   0|    1|          0|
+    |inner_reg0_V  |   9|   0|    9|          0|
+    |inner_reg1_V  |   9|   0|   11|          2|
+    |inner_reg2_V  |   9|   0|    9|          0|
+    |inner_reg3_V  |  10|   0|   12|          2|
+    |raddr_V       |   5|   0|    5|          0|
+    |rdata_V       |  12|   0|   12|          0|
+    |state1_V      |   2|   0|    2|          0|
+    |state_V       |   1|   0|    1|          0|
+    |waddr_V       |   5|   0|    5|          0|
+    +--------------+----+----+-----+-----------+
+    |Total         |  63|   0|   67|          4|
+    +--------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+--------------+--------------------+--------------+
+|     RTL Ports    | Dir | Bits|   Protocol   |    Source Object   |    C Type    |
++------------------+-----+-----+--------------+--------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_none|  axi_slave_lite_reg|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_none|  axi_slave_lite_reg|  return value|
+|s_axi_ar_araddr   |   in|   64|       ap_none|     s_axi_ar_araddr|       pointer|
+|s_axi_ar_arready  |  out|    1|       ap_none|    s_axi_ar_arready|       pointer|
+|s_axi_ar_arvalid  |   in|    1|       ap_none|    s_axi_ar_arvalid|       pointer|
+|s_axi_aw_awaddr   |   in|   64|       ap_none|     s_axi_aw_awaddr|       pointer|
+|s_axi_aw_awready  |  out|    1|       ap_none|    s_axi_aw_awready|       pointer|
+|s_axi_aw_awvalid  |   in|    1|       ap_none|    s_axi_aw_awvalid|       pointer|
+|s_axi_b_bresp     |  out|    2|       ap_none|       s_axi_b_bresp|       pointer|
+|s_axi_b_bready    |   in|    1|       ap_none|      s_axi_b_bready|       pointer|
+|s_axi_b_bvalid    |  out|    1|       ap_none|      s_axi_b_bvalid|       pointer|
+|s_axi_r_rdata     |  out|   64|       ap_none|       s_axi_r_rdata|       pointer|
+|s_axi_r_rresp     |  out|    2|       ap_none|       s_axi_r_rresp|       pointer|
+|s_axi_r_rready    |   in|    1|       ap_none|      s_axi_r_rready|       pointer|
+|s_axi_r_rvalid    |  out|    1|       ap_none|      s_axi_r_rvalid|       pointer|
+|s_axi_w_wdata     |   in|   64|       ap_none|       s_axi_w_wdata|       pointer|
+|s_axi_w_wstrb     |   in|    8|       ap_none|       s_axi_w_wstrb|       pointer|
+|s_axi_w_wready    |  out|    1|       ap_none|      s_axi_w_wready|       pointer|
+|s_axi_w_wvalid    |   in|    1|       ap_none|      s_axi_w_wvalid|       pointer|
++------------------+-----+-----+--------------+--------------------+--------------+
+

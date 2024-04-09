@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"axi_slave_lite_reg": {
+			"proto_instances": {
+			}
+		}
+	}
+}

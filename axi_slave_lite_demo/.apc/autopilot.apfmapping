@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axi_slave_lite_reg.cpp" path="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo/axi_slave_lite_reg.cpp"/>
+    <originFiles name="axi_slave_lite_reg.hpp" path="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo/axi_slave_lite_reg.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo/test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

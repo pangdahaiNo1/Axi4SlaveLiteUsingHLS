@@ -1,0 +1,935 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu19eg-ffvc1760-2-e</Part>
+        <TopModelName>axi_slave_lite_reg</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.015</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>63</FF>
+            <LUT>380</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>1968</BRAM_18K>
+            <DSP>1968</DSP>
+            <FF>1045440</FF>
+            <LUT>522720</LUT>
+            <URAM>128</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>axi_slave_lite_reg</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>axi_slave_lite_reg</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_ar_araddr</name>
+            <Object>s_axi_ar_araddr</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_ar_arready</name>
+            <Object>s_axi_ar_arready</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_ar_arvalid</name>
+            <Object>s_axi_ar_arvalid</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_aw_awaddr</name>
+            <Object>s_axi_aw_awaddr</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_aw_awready</name>
+            <Object>s_axi_aw_awready</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_aw_awvalid</name>
+            <Object>s_axi_aw_awvalid</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_b_bresp</name>
+            <Object>s_axi_b_bresp</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_b_bready</name>
+            <Object>s_axi_b_bready</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_b_bvalid</name>
+            <Object>s_axi_b_bvalid</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_r_rdata</name>
+            <Object>s_axi_r_rdata</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_r_rresp</name>
+            <Object>s_axi_r_rresp</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_r_rready</name>
+            <Object>s_axi_r_rready</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_r_rvalid</name>
+            <Object>s_axi_r_rvalid</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_w_wdata</name>
+            <Object>s_axi_w_wdata</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_w_wstrb</name>
+            <Object>s_axi_w_wstrb</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_w_wready</name>
+            <Object>s_axi_w_wready</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_w_wvalid</name>
+            <Object>s_axi_w_wvalid</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>axi_slave_lite_reg</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>axi_slave_lite_reg</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.015</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>63</FF>
+                    <AVAIL_FF>1045440</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>380</LUT>
+                    <AVAIL_LUT>522720</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>1968</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1968</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>128</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>axi_slave_lite_reg</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>axi_slave_lite_reg</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_ar_araddr</name>
+                    <Object>s_axi_ar_araddr</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_ar_arready</name>
+                    <Object>s_axi_ar_arready</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_ar_arvalid</name>
+                    <Object>s_axi_ar_arvalid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_aw_awaddr</name>
+                    <Object>s_axi_aw_awaddr</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_aw_awready</name>
+                    <Object>s_axi_aw_awready</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_aw_awvalid</name>
+                    <Object>s_axi_aw_awvalid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_b_bresp</name>
+                    <Object>s_axi_b_bresp</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_b_bready</name>
+                    <Object>s_axi_b_bready</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_b_bvalid</name>
+                    <Object>s_axi_b_bvalid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_r_rdata</name>
+                    <Object>s_axi_r_rdata</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_r_rresp</name>
+                    <Object>s_axi_r_rresp</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_r_rready</name>
+                    <Object>s_axi_r_rready</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_r_rvalid</name>
+                    <Object>s_axi_r_rvalid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_w_wdata</name>
+                    <Object>s_axi_w_wdata</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_w_wstrb</name>
+                    <Object>s_axi_w_wstrb</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_w_wready</name>
+                    <Object>s_axi_w_wready</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_w_wvalid</name>
+                    <Object>s_axi_w_wvalid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="s_axi_ar_araddr" index="0" direction="in" srcType="AxiArPkt&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_ar_araddr" name="s_axi_ar_araddr" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_ar_arready" index="1" direction="out" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_ar_arready" name="s_axi_ar_arready" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_ar_arvalid" index="2" direction="in" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_ar_arvalid" name="s_axi_ar_arvalid" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_aw_awaddr" index="3" direction="in" srcType="AxiArPkt&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_aw_awaddr" name="s_axi_aw_awaddr" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_aw_awready" index="4" direction="out" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_aw_awready" name="s_axi_aw_awready" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_aw_awvalid" index="5" direction="in" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_aw_awvalid" name="s_axi_aw_awvalid" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_b_bresp" index="6" direction="out" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_b_bresp" name="s_axi_b_bresp" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_b_bready" index="7" direction="in" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_b_bready" name="s_axi_b_bready" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_b_bvalid" index="8" direction="out" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_b_bvalid" name="s_axi_b_bvalid" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_r_rdata" index="9" direction="out" srcType="AxiArPkt&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_r_rdata" name="s_axi_r_rdata" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_r_rresp" index="10" direction="out" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_r_rresp" name="s_axi_r_rresp" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_r_rready" index="11" direction="in" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_r_rready" name="s_axi_r_rready" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_r_rvalid" index="12" direction="out" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_r_rvalid" name="s_axi_r_rvalid" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_w_wdata" index="13" direction="in" srcType="AxiArPkt&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_w_wdata" name="s_axi_w_wdata" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_w_wstrb" index="14" direction="in" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_w_wstrb" name="s_axi_w_wstrb" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_w_wready" index="15" direction="out" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_w_wready" name="s_axi_w_wready" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s_axi_w_wvalid" index="16" direction="in" srcType="AxiArPkt&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="s_axi_w_wvalid" name="s_axi_w_wvalid" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="s_axi_ar_araddr" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="s_axi_ar_araddr">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_ar_araddr</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_ar_araddr"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_ar_arready" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_ar_arready">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_ar_arready</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_ar_arready"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_ar_arvalid" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_ar_arvalid">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_ar_arvalid</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_ar_arvalid"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_aw_awaddr" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="s_axi_aw_awaddr">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_aw_awaddr</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_aw_awaddr"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_aw_awready" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_aw_awready">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_aw_awready</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_aw_awready"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_aw_awvalid" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_aw_awvalid">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_aw_awvalid</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_aw_awvalid"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_b_bready" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_b_bready">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_b_bready</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_b_bready"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_b_bresp" type="data" busTypeName="data" mode="master" dataWidth="2">
+            <portMaps>
+                <portMap portMapName="s_axi_b_bresp">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_b_bresp</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_b_bresp"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_b_bvalid" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_b_bvalid">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_b_bvalid</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_b_bvalid"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_r_rdata" type="data" busTypeName="data" mode="master" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="s_axi_r_rdata">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_r_rdata</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_r_rdata"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_r_rready" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_r_rready">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_r_rready</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_r_rready"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_r_rresp" type="data" busTypeName="data" mode="master" dataWidth="2">
+            <portMaps>
+                <portMap portMapName="s_axi_r_rresp">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_r_rresp</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_r_rresp"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_r_rvalid" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_r_rvalid">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_r_rvalid</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_r_rvalid"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_w_wdata" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="s_axi_w_wdata">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_w_wdata</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_w_wdata"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_w_wready" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_w_wready">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_w_wready</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_w_wready"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_w_wstrb" type="data" busTypeName="data" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="s_axi_w_wstrb">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_w_wstrb</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_w_wstrb"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_w_wvalid" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="s_axi_w_wvalid">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>s_axi_w_wvalid</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="s_axi_w_wvalid"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="REGISTER">
+                <table>
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="s_axi_ar_araddr">ap_none, 64</column>
+                    <column name="s_axi_ar_arready">ap_none, 1</column>
+                    <column name="s_axi_ar_arvalid">ap_none, 1</column>
+                    <column name="s_axi_aw_awaddr">ap_none, 64</column>
+                    <column name="s_axi_aw_awready">ap_none, 1</column>
+                    <column name="s_axi_aw_awvalid">ap_none, 1</column>
+                    <column name="s_axi_b_bready">ap_none, 1</column>
+                    <column name="s_axi_b_bresp">ap_none, 2</column>
+                    <column name="s_axi_b_bvalid">ap_none, 1</column>
+                    <column name="s_axi_r_rdata">ap_none, 64</column>
+                    <column name="s_axi_r_rready">ap_none, 1</column>
+                    <column name="s_axi_r_rresp">ap_none, 2</column>
+                    <column name="s_axi_r_rvalid">ap_none, 1</column>
+                    <column name="s_axi_w_wdata">ap_none, 64</column>
+                    <column name="s_axi_w_wready">ap_none, 1</column>
+                    <column name="s_axi_w_wstrb">ap_none, 8</column>
+                    <column name="s_axi_w_wvalid">ap_none, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_none</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="s_axi_ar_araddr">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_ar_arready">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_ar_arvalid">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_aw_awaddr">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_aw_awready">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_aw_awvalid">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_b_bresp">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_b_bready">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_b_bvalid">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_r_rdata">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_r_rresp">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_r_rready">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_r_rvalid">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_w_wdata">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_w_wstrb">in, AxiArPkt&amp;</column>
+                    <column name="s_axi_w_wready">out, AxiArPkt&amp;</column>
+                    <column name="s_axi_w_wvalid">in, AxiArPkt&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="s_axi_ar_araddr">s_axi_ar_araddr, port</column>
+                    <column name="s_axi_ar_arready">s_axi_ar_arready, port</column>
+                    <column name="s_axi_ar_arvalid">s_axi_ar_arvalid, port</column>
+                    <column name="s_axi_aw_awaddr">s_axi_aw_awaddr, port</column>
+                    <column name="s_axi_aw_awready">s_axi_aw_awready, port</column>
+                    <column name="s_axi_aw_awvalid">s_axi_aw_awvalid, port</column>
+                    <column name="s_axi_b_bresp">s_axi_b_bresp, port</column>
+                    <column name="s_axi_b_bready">s_axi_b_bready, port</column>
+                    <column name="s_axi_b_bvalid">s_axi_b_bvalid, port</column>
+                    <column name="s_axi_r_rdata">s_axi_r_rdata, port</column>
+                    <column name="s_axi_r_rresp">s_axi_r_rresp, port</column>
+                    <column name="s_axi_r_rready">s_axi_r_rready, port</column>
+                    <column name="s_axi_r_rvalid">s_axi_r_rvalid, port</column>
+                    <column name="s_axi_w_wdata">s_axi_w_wdata, port</column>
+                    <column name="s_axi_w_wstrb">s_axi_w_wstrb, port</column>
+                    <column name="s_axi_w_wready">s_axi_w_wready, port</column>
+                    <column name="s_axi_w_wvalid">s_axi_w_wvalid, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

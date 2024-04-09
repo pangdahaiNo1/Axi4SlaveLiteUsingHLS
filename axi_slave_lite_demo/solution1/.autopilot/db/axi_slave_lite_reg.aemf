@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1712644011051">
+  <ports id="1" name="s_axi_ar_araddr" type="PortType" originalName="s_axi_ar.araddr" coreId="0" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="s_axi_ar_arready" type="PortType" originalName="s_axi_ar.arready" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="s_axi_ar_arvalid" type="PortType" originalName="s_axi_ar.arvalid" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="s_axi_aw_awaddr" type="PortType" originalName="s_axi_aw.awaddr" coreId="3470333575" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="s_axi_aw_awready" type="PortType" originalName="s_axi_aw.awready" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="s_axi_aw_awvalid" type="PortType" originalName="s_axi_aw.awvalid" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="s_axi_b_bresp" type="PortType" originalName="s_axi_b.bresp" coreId="609" bitwidth="2" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="s_axi_b_bready" type="PortType" originalName="s_axi_b.bready" coreId="132" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="s_axi_b_bvalid" type="PortType" originalName="s_axi_b.bvalid" coreId="49" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="10" name="s_axi_r_rdata" type="PortType" originalName="s_axi_r.rdata" coreId="49" bitwidth="64" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="11" name="s_axi_r_rresp" type="PortType" originalName="s_axi_r.rresp" coreId="609" bitwidth="2" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="12" name="s_axi_r_rready" type="PortType" originalName="s_axi_r.rready" coreId="132" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="s_axi_r_rvalid" type="PortType" originalName="s_axi_r.rvalid" coreId="49" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="14" name="s_axi_w_wdata" type="PortType" originalName="s_axi_w.wdata" coreId="177" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="15" name="s_axi_w_wstrb" type="PortType" originalName="s_axi_w.wstrb" coreId="1754667856" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="16" name="s_axi_w_wready" type="PortType" originalName="s_axi_w.wready" coreId="1754579776" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="17" name="s_axi_w_wvalid" type="PortType" originalName="s_axi_w.wvalid" coreId="1754596112" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="209" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="210" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="213" source_obj="//@ports.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="216" source_obj="//@ports.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="217" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="219" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="224" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="227" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="230" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.15"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.6"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@ports.8"/>
+  <edges id="240" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="242" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="243" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="247" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="253" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="256" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="258" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.4"/>
+  <edges id="259" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.5"/>
+  <edges id="260" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.11" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@ports.15"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@ports.4"/>
+  <edges id="270" source_obj="//@regions.0/@basic_blocks.5/@node_objs.2" sink_obj="//@ports.8"/>
+  <edges id="273" source_obj="//@regions.0/@basic_blocks.5/@node_objs.3" sink_obj="//@ports.6"/>
+  <edges id="277" source_obj="//@ports.14" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.4"/>
+  <edges id="278" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.5"/>
+  <edges id="279" source_obj="//@regions.0/@basic_blocks.5/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.5"/>
+  <edges id="280" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.6"/>
+  <edges id="281" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.7"/>
+  <edges id="282" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.8"/>
+  <edges id="285" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.9"/>
+  <edges id="290" source_obj="//@regions.0/@basic_blocks.5/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.10"/>
+  <edges id="291" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.10"/>
+  <edges id="293" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.10"/>
+  <edges id="295" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.10"/>
+  <edges id="297" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.10"/>
+  <edges id="298" source_obj="//@regions.0/@basic_blocks.5/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="299" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="300" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.5/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="302" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="303" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.5/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="305" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="306" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.1"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.5/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.0"/>
+  <edges id="308" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.0"/>
+  <edges id="309" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.1"/>
+  <edges id="311" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.0"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.1"/>
+  <edges id="314" source_obj="//@regions.0/@basic_blocks.11/@node_objs.0" sink_obj="//@ports.15"/>
+  <edges id="317" source_obj="//@regions.0/@basic_blocks.11/@node_objs.1" sink_obj="//@ports.4"/>
+  <edges id="320" source_obj="//@regions.0/@basic_blocks.11/@node_objs.2" sink_obj="//@ports.8"/>
+  <edges id="323" source_obj="//@regions.0/@basic_blocks.11/@node_objs.3" sink_obj="//@ports.6"/>
+  <edges id="326" sink_obj="//@regions.0/@basic_blocks.11/@node_objs.4"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.11/@node_objs.5"/>
+  <edges id="329" source_obj="//@regions.0/@basic_blocks.12/@node_objs.0" sink_obj="//@ports.15"/>
+  <edges id="332" source_obj="//@regions.0/@basic_blocks.12/@node_objs.1" sink_obj="//@ports.4"/>
+  <edges id="335" source_obj="//@regions.0/@basic_blocks.12/@node_objs.2" sink_obj="//@ports.8"/>
+  <edges id="338" source_obj="//@regions.0/@basic_blocks.12/@node_objs.3" sink_obj="//@ports.6"/>
+  <edges id="341" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.12/@node_objs.4"/>
+  <edges id="342" source_obj="//@regions.0/@basic_blocks.12/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.12/@node_objs.5"/>
+  <edges id="343" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.14" sink_obj="//@regions.0/@basic_blocks.12/@node_objs.5"/>
+  <edges id="344" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.13" sink_obj="//@regions.0/@basic_blocks.12/@node_objs.5"/>
+  <edges id="346" sink_obj="//@regions.0/@basic_blocks.13/@node_objs.0"/>
+  <edges id="347" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.13/@node_objs.1"/>
+  <edges id="349" sink_obj="//@regions.0/@basic_blocks.14/@node_objs.0"/>
+  <edges id="350" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.14/@node_objs.1"/>
+  <edges id="351" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="352" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="353" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.13" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="355" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.14" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="357" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="359" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.11" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="361" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="363" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="364" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.13" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="370" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.14" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="372" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="374" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.11" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="376" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="378" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="379" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.2"/>
+  <edges id="380" source_obj="//@regions.0/@basic_blocks.15/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.3"/>
+  <edges id="381" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.16" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.3"/>
+  <edges id="382" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.24" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.3"/>
+  <edges id="384" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.16/@node_objs.0"/>
+  <edges id="385" source_obj="//@regions.0/@basic_blocks.16/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.16/@node_objs.1"/>
+  <edges id="386" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.22" sink_obj="//@regions.0/@basic_blocks.16/@node_objs.1"/>
+  <edges id="387" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.17" sink_obj="//@regions.0/@basic_blocks.16/@node_objs.1"/>
+  <edges id="389" source_obj="//@regions.0/@basic_blocks.17/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="392" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.1"/>
+  <edges id="393" source_obj="//@regions.0/@basic_blocks.17/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.2"/>
+  <edges id="394" source_obj="//@regions.0/@basic_blocks.17/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.3"/>
+  <edges id="395" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.3"/>
+  <edges id="397" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.4"/>
+  <edges id="400" source_obj="//@regions.0/@basic_blocks.17/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.5"/>
+  <edges id="403" source_obj="//@regions.0/@basic_blocks.17/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.6"/>
+  <edges id="404" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.21" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.6"/>
+  <edges id="406" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.6"/>
+  <edges id="408" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.19" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.6"/>
+  <edges id="410" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.20" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.6"/>
+  <edges id="411" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.0"/>
+  <edges id="412" source_obj="//@regions.0/@basic_blocks.18/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.1"/>
+  <edges id="413" source_obj="//@regions.0/@basic_blocks.18/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.2"/>
+  <edges id="414" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.2"/>
+  <edges id="415" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.23" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.3"/>
+  <edges id="416" sink_obj="//@regions.0/@basic_blocks.19/@node_objs.0"/>
+  <edges id="417" source_obj="//@regions.0/@basic_blocks.19/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.19/@node_objs.1"/>
+  <edges id="418" source_obj="//@regions.0/@basic_blocks.19/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.19/@node_objs.2"/>
+  <edges id="419" sink_obj="//@regions.0/@basic_blocks.19/@node_objs.2"/>
+  <edges id="420" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.23" sink_obj="//@regions.0/@basic_blocks.19/@node_objs.3"/>
+  <edges id="421" sink_obj="//@regions.0/@basic_blocks.20/@node_objs.0"/>
+  <edges id="422" source_obj="//@regions.0/@basic_blocks.20/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.20/@node_objs.1"/>
+  <edges id="423" source_obj="//@regions.0/@basic_blocks.20/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.20/@node_objs.2"/>
+  <edges id="424" source_obj="//@regions.0/@basic_blocks.20/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.20/@node_objs.3"/>
+  <edges id="425" sink_obj="//@regions.0/@basic_blocks.20/@node_objs.3"/>
+  <edges id="426" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.23" sink_obj="//@regions.0/@basic_blocks.20/@node_objs.4"/>
+  <edges id="427" sink_obj="//@regions.0/@basic_blocks.21/@node_objs.0"/>
+  <edges id="428" source_obj="//@regions.0/@basic_blocks.21/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.21/@node_objs.1"/>
+  <edges id="429" sink_obj="//@regions.0/@basic_blocks.21/@node_objs.1"/>
+  <edges id="430" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.23" sink_obj="//@regions.0/@basic_blocks.21/@node_objs.2"/>
+  <edges id="432" source_obj="//@regions.0/@basic_blocks.22/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="434" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.23" sink_obj="//@regions.0/@basic_blocks.22/@node_objs.1"/>
+  <edges id="436" source_obj="//@regions.0/@basic_blocks.23/@node_objs.0" sink_obj="//@ports.12"/>
+  <edges id="439" source_obj="//@regions.0/@basic_blocks.23/@node_objs.1" sink_obj="//@ports.10"/>
+  <edges id="441" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.26" sink_obj="//@regions.0/@basic_blocks.23/@node_objs.2"/>
+  <edges id="443" source_obj="//@regions.0/@basic_blocks.24/@node_objs.0" sink_obj="//@ports.10"/>
+  <edges id="446" source_obj="//@regions.0/@basic_blocks.24/@node_objs.1" sink_obj="//@ports.12"/>
+  <edges id="449" source_obj="//@regions.0/@basic_blocks.24/@node_objs.2" sink_obj="//@ports.1"/>
+  <edges id="451" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.3"/>
+  <edges id="452" source_obj="//@regions.0/@basic_blocks.24/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.4"/>
+  <edges id="454" source_obj="//@regions.0/@basic_blocks.15/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.5"/>
+  <edges id="457" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.6"/>
+  <edges id="459" source_obj="//@regions.0/@basic_blocks.24/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.7"/>
+  <edges id="462" source_obj="//@regions.0/@basic_blocks.24/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.8"/>
+  <edges id="463" source_obj="//@regions.0/@basic_blocks.24/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.8"/>
+  <edges id="464" source_obj="//@regions.0/@basic_blocks.24/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.9"/>
+  <edges id="465" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.9"/>
+  <edges id="466" source_obj="//@regions.0/@basic_blocks.24/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.9"/>
+  <edges id="467" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.10"/>
+  <edges id="468" source_obj="//@regions.0/@basic_blocks.15/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.10"/>
+  <edges id="469" source_obj="//@regions.0/@basic_blocks.24/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.11"/>
+  <edges id="470" source_obj="//@regions.0/@basic_blocks.24/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.11"/>
+  <edges id="471" source_obj="//@regions.0/@basic_blocks.24/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.11"/>
+  <edges id="472" source_obj="//@regions.0/@basic_blocks.15/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.12"/>
+  <edges id="473" source_obj="//@regions.0/@basic_blocks.24/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.12"/>
+  <edges id="474" source_obj="//@regions.0/@basic_blocks.24/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.12"/>
+  <edges id="477" source_obj="//@regions.0/@basic_blocks.24/@node_objs.13" sink_obj="//@ports.9"/>
+  <edges id="478" source_obj="//@regions.0/@basic_blocks.24/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.13"/>
+  <edges id="480" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.14"/>
+  <edges id="481" source_obj="//@regions.0/@basic_blocks.24/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.15"/>
+  <edges id="482" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.26" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.15"/>
+  <edges id="483" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.25" sink_obj="//@regions.0/@basic_blocks.24/@node_objs.15"/>
+  <edges id="485" sink_obj="//@regions.0/@basic_blocks.25/@node_objs.0"/>
+  <edges id="486" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.26" sink_obj="//@regions.0/@basic_blocks.25/@node_objs.1"/>
+  <edges id="847" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="848" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="849" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="850" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.12"/>
+  <edges id="851" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.12" sink_obj="//@regions.0/@basic_blocks.13"/>
+  <edges id="852" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.12" sink_obj="//@regions.0/@basic_blocks.14"/>
+  <edges id="853" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.14" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="854" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.13" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="855" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="856" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.11"/>
+  <edges id="857" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.11" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="858" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.9"/>
+  <edges id="859" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="860" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="861" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="862" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.9"/>
+  <edges id="863" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="864" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="865" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="866" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="867" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="868" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="869" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="870" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="871" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.24"/>
+  <edges id="872" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.16"/>
+  <edges id="873" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.16" sink_obj="//@regions.0/@basic_blocks.17"/>
+  <edges id="874" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.16" sink_obj="//@regions.0/@basic_blocks.22"/>
+  <edges id="875" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.22" sink_obj="//@regions.0/@basic_blocks.23"/>
+  <edges id="876" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.17" sink_obj="//@regions.0/@basic_blocks.21"/>
+  <edges id="877" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.17" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="878" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.17" sink_obj="//@regions.0/@basic_blocks.19"/>
+  <edges id="879" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.17" sink_obj="//@regions.0/@basic_blocks.20"/>
+  <edges id="880" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.20" sink_obj="//@regions.0/@basic_blocks.23"/>
+  <edges id="881" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.19" sink_obj="//@regions.0/@basic_blocks.23"/>
+  <edges id="882" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.23"/>
+  <edges id="883" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.21" sink_obj="//@regions.0/@basic_blocks.23"/>
+  <edges id="884" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.23" sink_obj="//@regions.0/@basic_blocks.26"/>
+  <edges id="885" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.24" sink_obj="//@regions.0/@basic_blocks.25"/>
+  <edges id="886" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.24" sink_obj="//@regions.0/@basic_blocks.26"/>
+  <edges id="887" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.25" sink_obj="//@regions.0/@basic_blocks.26"/>
+  <edges id="888" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.4"/>
+  <edges id="889" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="890" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.11/@node_objs.4"/>
+  <edges id="891" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.13/@node_objs.0"/>
+  <edges id="892" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.14/@node_objs.0"/>
+  <edges id="893" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.0"/>
+  <edges id="894" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.8/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.20/@node_objs.0"/>
+  <edges id="895" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.7/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.19/@node_objs.0"/>
+  <edges id="896" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.6/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.0"/>
+  <edges id="897" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.9/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.21/@node_objs.0"/>
+  <edges id="898" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.15/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.25/@node_objs.0"/>
+  <edges id="899" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.15/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.4"/>
+  <regions anchor_node="-1" region_type="2" typeName="Latency" id="593" RegionName="axi_slave_lite_reg">
+    <basic_blocks id="78" name="block_78" type="BlockType">
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>._crit_edge</controlOutputObjs>
+      <controlOutputObjs>block_133</controlOutputObjs>
+      <controlOutputObjs>block_93</controlOutputObjs>
+      <controlOutputObjs>block_85</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="state1_V_load" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_unsigned_long_long" bitwidth="2" opcode="load" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataOutputObjs>switch</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="p_Val2_s" lineNumber="708" originalName="__Val2__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." coreId="0" contextFuncName="to_uint64" bitwidth="5" opcode="load" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="708" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="to_uint64"/>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="s_axi_w_wvalid_read" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_unsigned_long_long" bitwidth="1" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>s_axi_w_wvalid</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="lhs_V" lineNumber="1348" originalName="lhs.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_64_false_8_false_s" bitwidth="64" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1348" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator&amp;amp;&amp;lt;64, false, 8, false&amp;gt;"/>
+        <dataInputObjs>s_axi_w_wdata</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln38" lineNumber="38" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="trunc_ln38_fu_295_p1" coreId="785" contextFuncName="axi_slave_lite_reg" bitwidth="8" opcode="trunc" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="38" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="_ln38" lineNumber="38" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754449032" contextFuncName="axi_slave_lite_reg" opcode="switch" m_display="0" m_delay="0.72" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="38" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>load</dataInputObjs>
+        <controlInputObjs>._crit_edge</controlInputObjs>
+        <controlInputObjs>block_133</controlInputObjs>
+        <controlInputObjs>block_93</controlInputObjs>
+        <controlInputObjs>block_85</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>38</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>534</validLinenumbers>
+        <validLinenumbers>1348</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+        <validLinenumbers>708</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="133" name="block_133" type="BlockType">
+      <controlInputObjs>block_78</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_143</controlOutputObjs>
+      <controlOutputObjs>block_136</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="s_axi_w_wready_write_ln40" lineNumber="40" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="40" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_w_wready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="s_axi_b_bresp_write_ln41" lineNumber="41" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754678120" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="41" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bresp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="s_axi_b_bvalid_write_ln42" lineNumber="42" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754678464" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="42" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bvalid</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="s_axi_aw_awvalid_read" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="818" contextFuncName="operator_unsigned_long_long" bitwidth="1" opcode="read" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>s_axi_aw_awvalid</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="br_ln43" lineNumber="43" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="2415919248" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="43" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <controlInputObjs>block_136</controlInputObjs>
+        <controlInputObjs>block_143</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>40</validLinenumbers>
+        <validLinenumbers>41</validLinenumbers>
+        <validLinenumbers>42</validLinenumbers>
+        <validLinenumbers>43</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>534</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="136" name="block_136" type="BlockType">
+      <controlInputObjs>block_133</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="s_axi_aw_awready_write_ln47" lineNumber="47" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754682704" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="47" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_aw_awready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="br_ln0" coreId="305" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <controlInputObjs>._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>47</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="143" name="block_143" type="BlockType">
+      <controlInputObjs>block_133</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="s_axi_aw_awready_write_ln44" lineNumber="44" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="44" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_aw_awready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="s_axi_aw_awaddr_read" lineNumber="45" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="64" opcode="read" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="45" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>s_axi_aw_awaddr</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="trunc_ln45" lineNumber="45" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="trunc_ln45_fu_357_p1" coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="5" opcode="trunc" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="45" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="waddr_V_write_ln45" lineNumber="45" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="45" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>trunc</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="state1_V_write_ln49" lineNumber="49" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.47" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="49" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="142" name="br_ln49" lineNumber="49" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="49" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>44</validLinenumbers>
+        <validLinenumbers>45</validLinenumbers>
+        <validLinenumbers>49</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="93" name="block_93" type="BlockType">
+      <controlInputObjs>block_78</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_112</controlOutputObjs>
+      <controlOutputObjs>block_100</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="br_ln52" lineNumber="52" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="572669287" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="52" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <controlInputObjs>block_100</controlInputObjs>
+        <controlInputObjs>block_112</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>52</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="112" name="block_112" type="BlockType">
+      <controlInputObjs>block_93</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge1</controlOutputObjs>
+      <controlOutputObjs>block_121</controlOutputObjs>
+      <controlOutputObjs>block_118</controlOutputObjs>
+      <controlOutputObjs>block_115</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="s_axi_w_wready_write_ln53" lineNumber="53" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="38" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="53" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_w_wready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="s_axi_aw_awready_write_ln55" lineNumber="55" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754650024" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="55" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_aw_awready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="s_axi_b_bvalid_write_ln56" lineNumber="56" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="56" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bvalid</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="s_axi_b_bresp_write_ln57" lineNumber="57" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="57" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bresp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="rhs" lineNumber="215" originalName="rhs" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="1754652344" contextFuncName="ap_int_base_8_false_s" bitwidth="8" opcode="read" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="215" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="ap_int_base&amp;lt;8, false&amp;gt;"/>
+        <dataInputObjs>s_axi_w_wstrb</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="ret" lineNumber="1348" originalName="ret" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="ret_fu_305_p2" opType="and" coreId="1754636592" contextFuncName="operator_64_false_8_false_s" bitwidth="8" opcode="and" m_display="0" m_delay="0.33" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1348" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator&amp;amp;&amp;lt;64, false, 8, false&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="zext_ln1348" lineNumber="1348" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="zext_ln1348_fu_311_p1" coreId="1754638200" contextFuncName="operator_64_false_8_false_s" bitwidth="11" opcode="zext" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1348" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator&amp;amp;&amp;lt;64, false, 8, false&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="zext_ln1348_1" lineNumber="1348" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="zext_ln1348_1_fu_315_p1" coreId="132" contextFuncName="operator_64_false_8_false_s" bitwidth="9" opcode="zext" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1348" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator&amp;amp;&amp;lt;64, false, 8, false&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="zext_ln1348_2" lineNumber="1348" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="zext_ln1348_2_fu_319_p1" coreId="1754639544" contextFuncName="operator_64_false_8_false_s" bitwidth="12" opcode="zext" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1348" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator&amp;amp;&amp;lt;64, false, 8, false&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="p_Result_s" lineNumber="708" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_s_fu_323_p4" coreId="132" contextFuncName="to_uint64" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="708" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="to_uint64"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>switch</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="_ln59" lineNumber="59" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754642329" contextFuncName="axi_slave_lite_reg" opcode="switch" m_display="0" m_delay="0.72" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="59" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <controlInputObjs>._crit_edge1</controlInputObjs>
+        <controlInputObjs>block_121</controlInputObjs>
+        <controlInputObjs>block_118</controlInputObjs>
+        <controlInputObjs>block_115</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>53</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>56</validLinenumbers>
+        <validLinenumbers>57</validLinenumbers>
+        <validLinenumbers>59</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>215</validLinenumbers>
+        <validLinenumbers>1348</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+        <validLinenumbers>708</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="121" name="block_121" type="BlockType">
+      <controlInputObjs>block_112</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_127</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="inner_reg0_V_write_ln61" lineNumber="61" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="61" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>zext</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="br_ln62" lineNumber="62" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="62" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>block_127</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>61</validLinenumbers>
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="118" name="block_118" type="BlockType">
+      <controlInputObjs>block_112</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_127</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="inner_reg1_V_write_ln64" lineNumber="64" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="64" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>zext</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="br_ln65" lineNumber="65" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="65" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>block_127</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>64</validLinenumbers>
+        <validLinenumbers>65</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="115" name="block_115" type="BlockType">
+      <controlInputObjs>block_112</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>._crit_edge1</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="inner_reg2_V_write_ln67" lineNumber="67" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754687664" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="67" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>zext</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="br_ln67" lineNumber="67" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="67" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>._crit_edge1</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>67</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="124" name="._crit_edge1" type="BlockType">
+      <controlInputObjs>block_112</controlInputObjs>
+      <controlInputObjs>block_115</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_127</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="inner_reg3_V_write_ln69" lineNumber="69" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="69" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>zext</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="br_ln70" lineNumber="70" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="49" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="70" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>block_127</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>69</validLinenumbers>
+        <validLinenumbers>70</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="127" name="block_127" type="BlockType">
+      <controlInputObjs>block_118</controlInputObjs>
+      <controlInputObjs>block_121</controlInputObjs>
+      <controlInputObjs>._crit_edge1</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="state1_V_write_ln71" lineNumber="71" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="49" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.47" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="71" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="br_ln72" lineNumber="72" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="62" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="72" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>71</validLinenumbers>
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="100" name="block_100" type="BlockType">
+      <controlInputObjs>block_93</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="s_axi_w_wready_write_ln73" lineNumber="73" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="11" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="73" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_w_wready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="s_axi_aw_awready_write_ln74" lineNumber="74" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="2177" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="74" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_aw_awready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="s_axi_b_bvalid_write_ln75" lineNumber="75" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="8" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="75" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bvalid</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="s_axi_b_bresp_write_ln76" lineNumber="76" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="76" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bresp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="state1_V_write_ln77" lineNumber="77" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754603352" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.47" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="77" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="br_ln0" coreId="0" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <controlInputObjs>._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>73</validLinenumbers>
+        <validLinenumbers>74</validLinenumbers>
+        <validLinenumbers>75</validLinenumbers>
+        <validLinenumbers>76</validLinenumbers>
+        <validLinenumbers>77</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="85" name="block_85" type="BlockType">
+      <controlInputObjs>block_78</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_91</controlOutputObjs>
+      <controlOutputObjs>block_88</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="s_axi_w_wready_write_ln81" lineNumber="81" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="2415919248" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="81" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_w_wready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="s_axi_aw_awready_write_ln82" lineNumber="82" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="82" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_aw_awready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="s_axi_b_bvalid_write_ln83" lineNumber="83" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1041" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="83" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bvalid</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="s_axi_b_bresp_write_ln84" lineNumber="84" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1754521984" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="84" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_b_bresp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="s_axi_b_bready_read" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_unsigned_long_long" bitwidth="1" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>s_axi_b_bready</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="br_ln85" lineNumber="85" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="85" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <controlInputObjs>block_88</controlInputObjs>
+        <controlInputObjs>block_91</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>81</validLinenumbers>
+        <validLinenumbers>82</validLinenumbers>
+        <validLinenumbers>83</validLinenumbers>
+        <validLinenumbers>84</validLinenumbers>
+        <validLinenumbers>85</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>534</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="91" name="block_91" type="BlockType">
+      <controlInputObjs>block_85</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="state1_V_write_ln86" lineNumber="86" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.47" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="86" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="br_ln87" lineNumber="87" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="87" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>87</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="88" name="block_88" type="BlockType">
+      <controlInputObjs>block_85</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="state1_V_write_ln88" lineNumber="88" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.47" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="88" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="br_ln0" coreId="1754340992" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <controlInputObjs>._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>88</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="148" name="._crit_edge" type="BlockType">
+      <controlInputObjs>block_78</controlInputObjs>
+      <controlInputObjs>block_88</controlInputObjs>
+      <controlInputObjs>block_91</controlInputObjs>
+      <controlInputObjs>block_100</controlInputObjs>
+      <controlInputObjs>block_127</controlInputObjs>
+      <controlInputObjs>block_136</controlInputObjs>
+      <controlInputObjs>block_143</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>_ifconv</controlOutputObjs>
+      <controlOutputObjs>block_151</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="p_Val2_1" originalName="__Val2__" coreId="0" bitwidth="5" opcode="phi" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <controlInputObjs>block_78</controlInputObjs>
+        <controlInputObjs>block_91</controlInputObjs>
+        <controlInputObjs>block_88</controlInputObjs>
+        <controlInputObjs>block_127</controlInputObjs>
+        <controlInputObjs>block_100</controlInputObjs>
+        <controlInputObjs>block_143</controlInputObjs>
+        <controlInputObjs>block_136</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="wready_V" originalName="wready.V" coreId="0" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>block_78</controlInputObjs>
+        <controlInputObjs>block_91</controlInputObjs>
+        <controlInputObjs>block_88</controlInputObjs>
+        <controlInputObjs>block_127</controlInputObjs>
+        <controlInputObjs>block_100</controlInputObjs>
+        <controlInputObjs>block_143</controlInputObjs>
+        <controlInputObjs>block_136</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="state_V_load" coreId="0" bitwidth="1" opcode="load" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="br_ln93" lineNumber="93" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="93" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>load</dataInputObjs>
+        <controlInputObjs>block_151</controlInputObjs>
+        <controlInputObjs>_ifconv</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>93</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="151" name="block_151" type="BlockType">
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_162</controlOutputObjs>
+      <controlOutputObjs>block_154</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="149" name="s_axi_ar_arvalid_read" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_unsigned_long_long" bitwidth="1" opcode="read" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>s_axi_ar_arvalid</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="br_ln95" lineNumber="95" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="95" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <controlInputObjs>block_154</controlInputObjs>
+        <controlInputObjs>block_162</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>95</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>534</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="162" name="block_162" type="BlockType">
+      <controlInputObjs>block_151</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_182</controlOutputObjs>
+      <controlOutputObjs>block_178</controlOutputObjs>
+      <controlOutputObjs>block_173</controlOutputObjs>
+      <controlOutputObjs>block_168</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="155" name="s_axi_ar_arready_write_ln96" lineNumber="96" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="4228300630" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="96" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_ar_arready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="156" name="p_Val2_3" lineNumber="97" originalName="__Val2__" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="4228300630" contextFuncName="axi_slave_lite_reg" bitwidth="64" opcode="read" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="97" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>s_axi_ar_araddr</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="157" name="trunc_ln97" lineNumber="97" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="trunc_ln97_fu_372_p1" coreId="4228300630" contextFuncName="axi_slave_lite_reg" bitwidth="5" opcode="trunc" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="97" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="158" name="raddr_V_write_ln97" lineNumber="97" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="4228300630" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="97" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>trunc</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="159" name="state_V_write_ln0" coreId="4228300630" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="160" name="p_Result_1" lineNumber="708" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_1_fu_388_p4" coreId="4228300630" contextFuncName="to_uint64" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="708" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="to_uint64"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>switch</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="161" name="_ln99" lineNumber="99" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="4228300630" contextFuncName="axi_slave_lite_reg" opcode="switch" m_display="0" m_delay="0.72" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="99" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <controlInputObjs>block_182</controlInputObjs>
+        <controlInputObjs>block_178</controlInputObjs>
+        <controlInputObjs>block_173</controlInputObjs>
+        <controlInputObjs>block_168</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>96</validLinenumbers>
+        <validLinenumbers>97</validLinenumbers>
+        <validLinenumbers>99</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+        <validLinenumbers>708</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="178" name="block_178" type="BlockType">
+      <controlInputObjs>block_162</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_186</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="174" name="inner_reg0_V_load" lineNumber="101" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="9" opcode="load" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="101" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="175" name="zext_ln101" lineNumber="101" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="zext_ln101_fu_434_p1" coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="12" opcode="zext" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="101" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="176" name="rdata_V_write_ln101" lineNumber="101" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="101" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>zext</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="br_ln102" lineNumber="102" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="102" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>block_186</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>101</validLinenumbers>
+        <validLinenumbers>102</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="173" name="block_173" type="BlockType">
+      <controlInputObjs>block_162</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_186</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="169" name="inner_reg1_V_load" lineNumber="104" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="11" opcode="load" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="104" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="170" name="zext_ln104" lineNumber="104" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="zext_ln104_fu_420_p1" coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="12" opcode="zext" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="104" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="171" name="rdata_V_write_ln104" lineNumber="104" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="104" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>zext</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="172" name="br_ln105" lineNumber="105" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="105" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>block_186</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>104</validLinenumbers>
+        <validLinenumbers>105</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="168" name="block_168" type="BlockType">
+      <controlInputObjs>block_162</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_186</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="163" name="inner_reg2_V_load" lineNumber="107" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="9" opcode="load" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="107" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="164" name="sext_ln107" lineNumber="107" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="sext_ln107_fu_402_p1" coreId="1754725848" contextFuncName="axi_slave_lite_reg" bitwidth="11" opcode="sext" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="107" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="165" name="zext_ln107" lineNumber="107" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="zext_ln107_fu_406_p1" coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="12" opcode="zext" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="107" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="166" name="rdata_V_write_ln107" lineNumber="107" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="107" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>zext</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="167" name="br_ln108" lineNumber="108" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="108" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>block_186</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>107</validLinenumbers>
+        <validLinenumbers>108</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="182" name="block_182" type="BlockType">
+      <controlInputObjs>block_162</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>block_186</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="179" name="inner_reg3_V_load" lineNumber="110" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="12" opcode="load" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="110" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="180" name="rdata_V_write_ln110" lineNumber="110" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="110" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>load</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="181" name="br_ln111" lineNumber="111" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="111" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>block_186</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>110</validLinenumbers>
+        <validLinenumbers>111</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="154" name="block_154" type="BlockType">
+      <controlInputObjs>block_151</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_186</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="s_axi_ar_arready_write_ln114" lineNumber="114" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="114" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_ar_arready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="153" name="br_ln0" coreId="0" opcode="br" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_186</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>114</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="186" name="block_186" type="BlockType">
+      <controlInputObjs>block_154</controlInputObjs>
+      <controlInputObjs>block_168</controlInputObjs>
+      <controlInputObjs>block_173</controlInputObjs>
+      <controlInputObjs>block_178</controlInputObjs>
+      <controlInputObjs>block_182</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge4</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="183" name="s_axi_r_rvalid_write_ln329" lineNumber="329" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="0" contextFuncName="operator_assign" opcode="write" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="329" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator="/>
+        <dataOutputObjs>s_axi_r_rvalid</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="184" name="s_axi_r_rresp_write_ln118" lineNumber="118" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="118" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_r_rresp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="185" name="br_ln119" lineNumber="119" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="119" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>._crit_edge4</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>118</validLinenumbers>
+        <validLinenumbers>119</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h">
+        <validLinenumbers>329</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="203" name="_ifconv" type="BlockType">
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_206</controlOutputObjs>
+      <controlOutputObjs>._crit_edge4</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="187" name="s_axi_r_rresp_write_ln121" lineNumber="121" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="121" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_r_rresp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="188" name="s_axi_r_rvalid_write_ln329" lineNumber="329" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="28263" contextFuncName="operator_assign" opcode="write" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="329" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator="/>
+        <dataOutputObjs>s_axi_r_rvalid</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="189" name="s_axi_ar_arready_write_ln123" lineNumber="123" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="123" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>s_axi_ar_arready</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="190" name="rdata_V_load" lineNumber="124" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" bitwidth="12" opcode="load" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="124" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="191" name="zext_ln674" lineNumber="674" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="zext_ln674_fu_458_p1" coreId="0" contextFuncName="get" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="get"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="192" name="p_Result_4" lineNumber="674" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_4_fu_462_p4" coreId="0" contextFuncName="get" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="get"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="193" name="p_Val2_2" lineNumber="674" originalName="__Val2__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." coreId="0" contextFuncName="get" bitwidth="5" opcode="load" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="get"/>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="194" name="p_Result_5" lineNumber="674" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_5_fu_476_p4" coreId="0" contextFuncName="get" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="99" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="get"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="195" name="icmp_ln870" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln870_fu_486_p2" opType="icmp" coreId="0" contextFuncName="operator_eq_64_false" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.44" m_topoIndex="100" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator==&amp;lt;64, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="196" name="select_ln124" lineNumber="124" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." rtlName="select_ln124_fu_492_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="axi_slave_lite_reg" bitwidth="64" opcode="select" m_display="0" m_topoIndex="101" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="124" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="197" name="and_ln534" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="and_ln534_fu_500_p2" opType="and" coreId="766" contextFuncName="operator_unsigned_long_long" bitwidth="1" opcode="and" m_display="0" m_topoIndex="102" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="198" name="select_ln534" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="select_ln534_fu_506_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="operator_unsigned_long_long" bitwidth="64" opcode="select" m_display="0" m_delay="0.42" m_topoIndex="103" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="199" name="cond_lvalue1" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="s_axi_r_rdata" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="operator_unsigned_long_long" bitwidth="64" opcode="select" m_display="0" m_delay="0.42" m_topoIndex="104" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="200" name="s_axi_r_rdata_write_ln124" lineNumber="124" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="1423" contextFuncName="axi_slave_lite_reg" opcode="write" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="124" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>s_axi_r_rdata</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="201" name="s_axi_r_rready_read" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="1976" contextFuncName="operator_unsigned_long_long" bitwidth="1" opcode="read" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="operator unsigned long long"/>
+        <dataInputObjs>s_axi_r_rready</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="202" name="br_ln125" lineNumber="125" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="2335" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="125" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <dataInputObjs>read</dataInputObjs>
+        <controlInputObjs>._crit_edge4</controlInputObjs>
+        <controlInputObjs>block_206</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>121</validLinenumbers>
+        <validLinenumbers>123</validLinenumbers>
+        <validLinenumbers>124</validLinenumbers>
+        <validLinenumbers>125</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h">
+        <validLinenumbers>329</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>870</validLinenumbers>
+        <validLinenumbers>534</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+        <validLinenumbers>674</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="206" name="block_206" type="BlockType">
+      <controlInputObjs>_ifconv</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge4</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="204" name="state_V_write_ln0" coreId="2683" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="108" m_clusterGroupNumber="-1">
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="205" name="br_ln126" lineNumber="126" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="2843" contextFuncName="axi_slave_lite_reg" opcode="br" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="126" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+        <controlInputObjs>._crit_edge4</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>126</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="208" name="._crit_edge4" type="BlockType">
+      <controlInputObjs>block_186</controlInputObjs>
+      <controlInputObjs>_ifconv</controlInputObjs>
+      <controlInputObjs>block_206</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="_ln134" lineNumber="134" fileName="axi_slave_lite_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_slave_lite_reg" opcode="ret" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_slave_lite_reg.cpp" linenumber="134" fileDirectory="/home/pangdahai/Downloads/self_study_project/axi_lite_savle_demo" functionName="axi_slave_lite_reg"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_slave_lite_reg.cpp">
+        <validLinenumbers>134</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <regnodes realName="wready_V_reg_243">
+    <nodeIds>145</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_1_reg_224">
+    <nodeIds>144</nodeIds>
+  </regnodes>
+  <expressionNodes realName="trunc_ln38_fu_295">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln870_fu_486">
+    <nodeIds>195</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wready_V_phi_fu_246">
+    <nodeIds>145</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln107_fu_406">
+    <nodeIds>165</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_1_fu_388">
+    <nodeIds>160</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_5_fu_476">
+    <nodeIds>194</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln107_fu_402">
+    <nodeIds>164</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1348_fu_311">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_1_phi_fu_227">
+    <nodeIds>144</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln101_fu_434">
+    <nodeIds>175</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln534_fu_500">
+    <nodeIds>197</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln124_fu_492">
+    <nodeIds>196</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln45_fu_357">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln104_fu_420">
+    <nodeIds>170</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_fu_305">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln97_fu_372">
+    <nodeIds>157</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_323">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln674_fu_458">
+    <nodeIds>191</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln534_fu_506">
+    <nodeIds>198</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cond_lvalue1_fu_514">
+    <nodeIds>199</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_4_fu_462">
+    <nodeIds>192</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1348_1_fu_315">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1348_2_fu_319">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="rhs_read_fu_154">
+    <nodeIds>105</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_axi_aw_awaddr_read_read_fu_167">
+    <nodeIds>138</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln104_store_fu_424">
+    <nodeIds>171</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_store_fu_269">
+    <nodeIds>86</nodeIds>
+    <nodeIds>125</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_axi_ar_arvalid_read_read_fu_173">
+    <nodeIds>149</nodeIds>
+  </ioNodes>
+  <ioNodes realName="inner_reg2_V_load_load_fu_398">
+    <nodeIds>163</nodeIds>
+  </ioNodes>
+  <ioNodes realName="state1_V_load_load_fu_281">
+    <nodeIds>72</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln61_store_fu_345">
+    <nodeIds>119</nodeIds>
+  </ioNodes>
+  <ioNodes realName="inner_reg0_V_load_load_fu_430">
+    <nodeIds>174</nodeIds>
+  </ioNodes>
+  <ioNodes realName="rdata_V_load_load_fu_454">
+    <nodeIds>190</nodeIds>
+  </ioNodes>
+  <ioNodes realName="inner_reg1_V_load_load_fu_416">
+    <nodeIds>169</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_523">
+    <nodeIds>204</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln86_store_fu_299">
+    <nodeIds>89</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_Val2_3_read_fu_188">
+    <nodeIds>156</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_179">
+    <nodeIds>152</nodeIds>
+    <nodeIds>155</nodeIds>
+    <nodeIds>189</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_114">
+    <nodeIds>79</nodeIds>
+    <nodeIds>94</nodeIds>
+    <nodeIds>101</nodeIds>
+    <nodeIds>128</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_axi_b_bready_read_read_fu_146">
+    <nodeIds>83</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_130">
+    <nodeIds>81</nodeIds>
+    <nodeIds>96</nodeIds>
+    <nodeIds>103</nodeIds>
+    <nodeIds>130</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_339">
+    <nodeIds>116</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_382">
+    <nodeIds>159</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_194">
+    <nodeIds>183</nodeIds>
+    <nodeIds>188</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_Val2_s_load_fu_285">
+    <nodeIds>73</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_axi_w_wvalid_read_read_fu_102">
+    <nodeIds>74</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln107_store_fu_410">
+    <nodeIds>166</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln110_store_fu_448">
+    <nodeIds>180</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln101_store_fu_438">
+    <nodeIds>176</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_Val2_2_load_fu_472">
+    <nodeIds>193</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_store_fu_275">
+    <nodeIds>98</nodeIds>
+    <nodeIds>141</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_axi_r_rready_read_read_fu_218">
+    <nodeIds>201</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln69_store_fu_351">
+    <nodeIds>122</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln67_store_fu_333">
+    <nodeIds>113</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln97_store_fu_376">
+    <nodeIds>158</nodeIds>
+  </ioNodes>
+  <ioNodes realName="lhs_V_read_fu_108">
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_138">
+    <nodeIds>82</nodeIds>
+    <nodeIds>97</nodeIds>
+    <nodeIds>104</nodeIds>
+    <nodeIds>129</nodeIds>
+  </ioNodes>
+  <ioNodes realName="inner_reg3_V_load_load_fu_444">
+    <nodeIds>179</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_202">
+    <nodeIds>184</nodeIds>
+    <nodeIds>187</nodeIds>
+  </ioNodes>
+  <ioNodes realName="state_V_load_load_fu_368">
+    <nodeIds>146</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln124_write_fu_211">
+    <nodeIds>200</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_122">
+    <nodeIds>80</nodeIds>
+    <nodeIds>95</nodeIds>
+    <nodeIds>102</nodeIds>
+    <nodeIds>134</nodeIds>
+    <nodeIds>137</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln45_store_fu_362">
+    <nodeIds>140</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_axi_aw_awvalid_read_read_fu_160">
+    <nodeIds>131</nodeIds>
+  </ioNodes>
+  <ioPorts name="s_axi_ar_araddr">
+    <contents name="read">
+      <nodeIds>156</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_ar_arready">
+    <contents name="write">
+      <nodeIds>155</nodeIds>
+      <nodeIds>152</nodeIds>
+      <nodeIds>189</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_ar_arvalid">
+    <contents name="read">
+      <nodeIds>149</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_aw_awaddr">
+    <contents name="read">
+      <nodeIds>138</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_aw_awready">
+    <contents name="write">
+      <nodeIds>134</nodeIds>
+      <nodeIds>137</nodeIds>
+      <nodeIds>102</nodeIds>
+      <nodeIds>95</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_aw_awvalid">
+    <contents name="read">
+      <nodeIds>131</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_b_bready">
+    <contents name="read">
+      <nodeIds>83</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_b_bresp">
+    <contents name="write">
+      <nodeIds>129</nodeIds>
+      <nodeIds>104</nodeIds>
+      <nodeIds>97</nodeIds>
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_b_bvalid">
+    <contents name="write">
+      <nodeIds>130</nodeIds>
+      <nodeIds>103</nodeIds>
+      <nodeIds>96</nodeIds>
+      <nodeIds>81</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_r_rdata">
+    <contents name="write">
+      <nodeIds>200</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_r_rready">
+    <contents name="read">
+      <nodeIds>201</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_r_rresp">
+    <contents name="write">
+      <nodeIds>184</nodeIds>
+      <nodeIds>187</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_r_rvalid">
+    <contents name="write">
+      <nodeIds>183</nodeIds>
+      <nodeIds>188</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_w_wdata">
+    <contents name="read">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_w_wready">
+    <contents name="write">
+      <nodeIds>128</nodeIds>
+      <nodeIds>101</nodeIds>
+      <nodeIds>94</nodeIds>
+      <nodeIds>79</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_w_wstrb">
+    <contents name="read">
+      <nodeIds>105</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_axi_w_wvalid">
+    <contents name="read">
+      <nodeIds>74</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="163" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="174" stage="1" latency="1"/>
+      <operations id="175" stage="1" latency="1"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="177" stage="1" latency="1"/>
+      <operations id="179" stage="1" latency="1"/>
+      <operations id="180" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+      <operations id="185" stage="1" latency="1"/>
+      <operations id="187" stage="1" latency="1"/>
+      <operations id="188" stage="1" latency="1"/>
+      <operations id="189" stage="1" latency="1"/>
+      <operations id="190" stage="1" latency="1"/>
+      <operations id="191" stage="1" latency="1"/>
+      <operations id="192" stage="1" latency="1"/>
+      <operations id="193" stage="1" latency="1"/>
+      <operations id="194" stage="1" latency="1"/>
+      <operations id="195" stage="1" latency="1"/>
+      <operations id="196" stage="1" latency="1"/>
+      <operations id="197" stage="1" latency="1"/>
+      <operations id="198" stage="1" latency="1"/>
+      <operations id="199" stage="1" latency="1"/>
+      <operations id="200" stage="1" latency="1"/>
+      <operations id="201" stage="1" latency="1"/>
+      <operations id="202" stage="1" latency="1"/>
+      <operations id="204" stage="1" latency="1"/>
+      <operations id="205" stage="1" latency="1"/>
+      <operations id="207" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="axi_slave_lite_reg" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>78</basicBlocks>
+      <basicBlocks>85</basicBlocks>
+      <basicBlocks>88</basicBlocks>
+      <basicBlocks>91</basicBlocks>
+      <basicBlocks>93</basicBlocks>
+      <basicBlocks>100</basicBlocks>
+      <basicBlocks>112</basicBlocks>
+      <basicBlocks>115</basicBlocks>
+      <basicBlocks>118</basicBlocks>
+      <basicBlocks>121</basicBlocks>
+      <basicBlocks>124</basicBlocks>
+      <basicBlocks>127</basicBlocks>
+      <basicBlocks>133</basicBlocks>
+      <basicBlocks>136</basicBlocks>
+      <basicBlocks>143</basicBlocks>
+      <basicBlocks>148</basicBlocks>
+      <basicBlocks>151</basicBlocks>
+      <basicBlocks>154</basicBlocks>
+      <basicBlocks>162</basicBlocks>
+      <basicBlocks>168</basicBlocks>
+      <basicBlocks>173</basicBlocks>
+      <basicBlocks>178</basicBlocks>
+      <basicBlocks>182</basicBlocks>
+      <basicBlocks>186</basicBlocks>
+      <basicBlocks>203</basicBlocks>
+      <basicBlocks>206</basicBlocks>
+      <basicBlocks>208</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

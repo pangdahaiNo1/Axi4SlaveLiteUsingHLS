@@ -1,0 +1,94 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="axi_slave_lite_reg" language="c" hwCtrl="ap_ctrl_none" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="s_axi_ar_araddr" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_ar_araddr" hw_bitwidth="64" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="w" src_name="s_axi_ar_arready" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_ar_arready" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="r" src_name="s_axi_ar_arvalid" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_ar_arvalid" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="3" access_type="r" src_name="s_axi_aw_awaddr" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_aw_awaddr" hw_bitwidth="64" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="4" access_type="w" src_name="s_axi_aw_awready" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_aw_awready" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="5" access_type="r" src_name="s_axi_aw_awvalid" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_aw_awvalid" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="6" access_type="w" src_name="s_axi_b_bresp" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_b_bresp" hw_bitwidth="2" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="7" access_type="r" src_name="s_axi_b_bready" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_b_bready" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="8" access_type="w" src_name="s_axi_b_bvalid" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_b_bvalid" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="9" access_type="w" src_name="s_axi_r_rdata" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_r_rdata" hw_bitwidth="64" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="10" access_type="w" src_name="s_axi_r_rresp" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_r_rresp" hw_bitwidth="2" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="11" access_type="r" src_name="s_axi_r_rready" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_r_rready" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="12" access_type="w" src_name="s_axi_r_rvalid" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_r_rvalid" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="13" access_type="r" src_name="s_axi_w_wdata" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_w_wdata" hw_bitwidth="64" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="14" access_type="r" src_name="s_axi_w_wstrb" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_w_wstrb" hw_bitwidth="8" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="15" access_type="w" src_name="s_axi_w_wready" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_w_wready" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="16" access_type="r" src_name="s_axi_w_wvalid" src_type="AxiArPkt&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s_axi_w_wvalid" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0"/>
+    </return>
+  </kernel>
+</root>

@@ -1,0 +1,24 @@
+
+
+================================================================
+== Synthesis Summary Report of 'axi_slave_lite_reg'
+================================================================
++ General Information: 
+    * Date:           Tue Apr  9 14:26:51 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        axi_slave_lite_demo
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu19eg-ffvc1760-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |        Modules       | Issue|       | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    |        & Loops       | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ axi_slave_lite_reg  |     -|  -5.28|        0|   0.000|         -|        1|     -|        no|     -|   -|  63 (~0%)|  380 (~0%)|    -|
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+

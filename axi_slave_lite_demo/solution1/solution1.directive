@@ -1,0 +1,20 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="axi_slave_lite_reg" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="axi_slave_lite_reg"/>
+            </pragma>
+        </directive>
+        <directive functionName="axi_slave_lite_reg" label="WAIT_FOR_READ" functionLabel="">
+            <pragma name="PROTOCOL">
+                <option name="fixed" value="" positionalBoolean="mode"/>
+            </pragma>
+        </directive>
+        <directive functionName="axi_slave_lite_reg" label="WAIT_FOR_BRESP" functionLabel="">
+            <pragma name="PROTOCOL">
+                <option name="fixed" value="" positionalBoolean="mode"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
