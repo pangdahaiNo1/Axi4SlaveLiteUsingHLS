@@ -1,0 +1,1 @@
+The built-in AXI interface mapping in HLS does not support more complex features, for example, it is difficult to implement AXI4 Full Interconnect. I tried to implement an AXI4 Lite interface myself using HLS.
